@@ -1,7 +1,8 @@
 <style>
-    div{
+    .padre{
         display:flex;
         flex-direction:row;
+        gap: 4%;
     }
 </style>
 
@@ -19,22 +20,21 @@
 
 # Segundo paso:
 
-<div>
-    <section>
-        ### instalar vue3=>
-        ```bash
-            npm install vue
-            npm install vue-loader
-
-            npm install @vitejs/plugin-vue
-        ```
-    </section>
-    <section>
-        ### vite.config.js=> 
-        ```javascript
-            import vue from '@vitejs/plugin-vue';
-        ```
-    </section>
+<div class="padre">
+    <div>
+        instalar vue3:
+        <pre><code class="bash">
+    npm install vue
+    npm install vue-loader
+    npm install @vitejs/plugin-vue
+        </code></pre>
+    </div>
+    <div>
+        vite.config.js:
+        <pre><code class="javascript">
+    import vue from '@vitejs/plugin-vue';
+        </code></pre>
+    </div>
 </div>
 ### agregamos vue(), dentro de plugins en ese mismo archivo=>
 ```javascript
