@@ -1,5 +1,5 @@
 # primeros pasos:
-# <span style="color: red;">Encabezado 1 en rojo</span>
+
 ### crear proyecto con laravel=>
 
 ```bash
@@ -7,6 +7,9 @@
     composer global require laravel/installer
     laravel new nombre-del-proyecto
 ```
+
+<hr>
+
 # Segundo paso:
 
 ### instalar vue3=>
@@ -60,7 +63,11 @@ resources
 en el archivo tailwind.config.js agregamos en el array de content:
 
 ```javascript
-    "./resources/js/**/*.{vue,js,ts,jxs,tsx}"
+    export default{
+        content:[
+            "./resources/js/**/*.{vue,js,ts,jxs,tsx}",
+        ]
+    }
 ```
 creamos un archivo css de vue con lo siguiente
 
@@ -74,23 +81,43 @@ y lo importamos en el main.js por lo general es de la siguiente manera
 import '../../css/vue.css';
 
 # cuarto paso:
-crear tablas y modelos
+## crear tablas y modelos
 
+```bash
 php artisan make:migration create<nombre>Table
+```
 
-para crear todo de uns se usaria el comando 
+### para crear todo rapido se usaria el comando:
+
+```bash
 php artisan make:migration create<nombre>Table -m -c
+```
 
-ejecutar migraciones
+## ejecutar migraciones
+
+```bash
 php artisan migrate
+```
 
 tambien las podemos eliminar y volver a crearlas
+
+```bash
 php artisan migrate:refresh
+```
 
 o solo poder eliminar la anterior
-php artisan migrate:rollback
 
-Quinto paso:
+```bash
+php artisan migrate:rollback
+```
+
+<hr/>
+
+
+# Quinto paso:
 crear los request
+
+```bash
 php artisan make:request PutRequest
 php artisan make:request StoreRequest
+```
