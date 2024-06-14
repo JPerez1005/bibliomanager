@@ -1,6 +1,6 @@
 # primeros pasos:
 
-## crear proyecto con laravel=>
+### crear proyecto con laravel=>
 
 ```bash
     composer global remove laravel/installer
@@ -9,18 +9,18 @@
 ```
 # Segundo paso:
 
-## instalar vue3=>
+### instalar vue3=>
 ```bash
     npm install vue
     npm install vue-loader
 
     npm install @vitejs/plugin-vue
 ```
-## vite.config.js=> 
+### vite.config.js=> 
 ```javascript
     import vue from '@vitejs/plugin-vue';
 ```
-## agregamos vue(), dentro de plugins en ese mismo archivo=>
+### agregamos vue(), dentro de plugins en ese mismo archivo=>
 ```javascript
     export default defineConfig({
     plugins: [
@@ -48,11 +48,11 @@ resources
 ```
 
 # Tercer paso:
-## instalar taildwind=>
+### instalar taildwind=>
 ```bash
     npm install -D tailwindcss
 ```
-## exponerlo=>
+### exponerlo=>
 ```bash
     npx tailwindcss init
 ```
