@@ -1,3 +1,10 @@
+<style>
+    div{
+        display:flex;
+        flex-direction:row;
+    }
+</style>
+
 # primeros pasos:
 
 ### crear proyecto con laravel=>
@@ -12,16 +19,18 @@
 
 # Segundo paso:
 
-### instalar vue3=>
-```bash
-    npm install vue
-    npm install vue-loader
+<div>
+    ### instalar vue3=>
+    ```bash
+        npm install vue
+        npm install vue-loader
 
-    npm install @vitejs/plugin-vue
-```
-### vite.config.js=> 
-```javascript
-    import vue from '@vitejs/plugin-vue';
+        npm install @vitejs/plugin-vue
+    ```
+    ### vite.config.js=> 
+    ```javascript
+        import vue from '@vitejs/plugin-vue';
+</div>
 ```
 ### agregamos vue(), dentro de plugins en ese mismo archivo=>
 ```javascript
