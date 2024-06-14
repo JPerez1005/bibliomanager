@@ -20,18 +20,22 @@
 # Segundo paso:
 
 <div>
-    ### instalar vue3=>
-    ```bash
-        npm install vue
-        npm install vue-loader
+    <section>
+        ### instalar vue3=>
+        ```bash
+            npm install vue
+            npm install vue-loader
 
-        npm install @vitejs/plugin-vue
-    ```
-    ### vite.config.js=> 
-    ```javascript
-        import vue from '@vitejs/plugin-vue';
+            npm install @vitejs/plugin-vue
+        ```
+    </section>
+    <section>
+        ### vite.config.js=> 
+        ```javascript
+            import vue from '@vitejs/plugin-vue';
+        ```
+    </section>
 </div>
-```
 ### agregamos vue(), dentro de plugins en ese mismo archivo=>
 ```javascript
     export default defineConfig({
