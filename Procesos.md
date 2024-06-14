@@ -1,5 +1,5 @@
 # primeros pasos:
-
+# <span style="color: red;">Encabezado 1 en rojo</span>
 ### crear proyecto con laravel=>
 
 ```bash
