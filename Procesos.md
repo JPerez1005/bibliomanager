@@ -1,9 +1,10 @@
 primeros pasos:
 crear proyecto con laravel=>
-composer global remove laravel/installer
-composer global require laravel/installer
-laravel new nombre-del-proyecto
-
+```bash
+    composer global remove laravel/installer
+    composer global require laravel/installer
+    laravel new nombre-del-proyecto
+```
 Segundo paso:
 instalar vue3=>
 npm install vue
