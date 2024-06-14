@@ -1,20 +1,35 @@
-primeros pasos:
-crear proyecto con laravel=>
+# primeros pasos:
+
+## crear proyecto con laravel=>
+
 ```bash
     composer global remove laravel/installer
     composer global require laravel/installer
     laravel new nombre-del-proyecto
 ```
-Segundo paso:
-instalar vue3=>
-npm install vue
-npm install vue-loader
+# Segundo paso:
 
-npm install @vitejs/plugin-vue
+## instalar vue3=>
+```bash
+    npm install vue
+    npm install vue-loader
 
-vite.config.js=> import vue from '@vitejs/plugin-vue'
-agregamos vue(), dentro de plugins en ese mismo archivo
+    npm install @vitejs/plugin-vue
+```
+## vite.config.js=> 
+```javascript
+    import vue from '@vitejs/plugin-vue';
+```
+## agregamos vue(), dentro de plugins en ese mismo archivo=>
+```javascript
+    export default defineConfig({
+    plugins: [
+        vue(),
+    ]
+    });
+```
 
+```bash
 resources
 │
 ├── css
@@ -30,26 +45,35 @@ resources
 │       ├── routes.js
 │       └── components
 │           └── EjemploComponent.vue
+```
 
-
-Tercer paso:
-instalar taildwind:
-npm install -D tailwindcss
-exponerlo: 
-npx tailwindcss init
+# Tercer paso:
+## instalar taildwind=>
+```bash
+    npm install -D tailwindcss
+```
+## exponerlo=>
+```bash
+    npx tailwindcss init
+```
 
 en el archivo tailwind.config.js agregamos en el array de content:
-"./resources/js/**/*.{vue,js,ts,jxs,tsx}"
 
+```javascript
+    "./resources/js/**/*.{vue,js,ts,jxs,tsx}"
+```
 creamos un archivo css de vue con lo siguiente
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+
+```css
+    @import 'tailwindcss/base';
+    @import 'tailwindcss/components';
+    @import 'tailwindcss/utilities';
+```
 
 y lo importamos en el main.js por lo general es de la siguiente manera
 import '../../css/vue.css';
 
-cuarto paso:
+# cuarto paso:
 crear tablas y modelos
 
 php artisan make:migration create<nombre>Table
