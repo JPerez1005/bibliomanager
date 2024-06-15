@@ -1,18 +1,18 @@
-# primeros pasos:
+<h1 align="center">Primeros Pasos:</h1>
 
-### crear proyecto con laravel=>
+<p align="center">
 
-```bash
-    composer global remove laravel/installer
-    composer global require laravel/installer
-    laravel new nombre-del-proyecto
-```
+|Crear Proyecto|
+|-|
+|<pre><code class="bash">composer global remove laravel/installer</code></pre>|
+|<pre><code class="bash">composer global require laravel/installer</code></pre>|
+|<pre><code class="bash">laravel new nombre-del-proyecto</code></pre>|
 
-<hr>
 
-# Segundo paso:
+</p>
 
-<center align="center">
+
+<h1 align="center">Segundo Paso:</h1>
 
 | Instalar Vue 3 | Colocar la Configuración en vite.config.js|
 | ----------- | ----------- |
@@ -41,20 +41,13 @@ resources
 │           └── EjemploComponent.vue
 ```
 
-</center>
 
 
+<h1 align="center">Tercer Paso:</h1>
 
-
-# Tercer paso:
-### instalar taildwind=>
-```bash
-    npm install -D tailwindcss
-```
-### exponerlo=>
-```bash
-    npx tailwindcss init
-```
+|Intalar Taildwind| Exponer Taildwind |
+|-|-|
+|<pre><code class="bash">npm install -D tailwindcss</code></pre>| <pre><code class="javascript">npx tailwindcss init</code></pre> |
 
 en el archivo tailwind.config.js agregamos en el array de content:
 
@@ -76,7 +69,7 @@ creamos un archivo css de vue con lo siguiente
 y lo importamos en el main.js por lo general es de la siguiente manera
 import '../../css/vue.css';
 
-# cuarto paso:
+<h1 align="center">Cuarto Paso:</h1>
 ## crear tablas y modelos
 
 ```bash
@@ -110,14 +103,10 @@ php artisan migrate:rollback
 <hr/>
 
 
-# Quinto paso:
+<h1 align="center">Quinto Paso:</h1>
 crear los request
 
 ```bash
 php artisan make:request PutRequest
 php artisan make:request StoreRequest
 ```
-
-| Repository Activity Trends | Collaborative Productivity - Last 28 days |
-| ----------- | ----------- |
-|<img src="https://next.ossinsight.io/widgets/official/compose-activity-trends/thumbnail.png?repo_id=41986369&image_size=auto" />|<img src="https://next.ossinsight.io/widgets/official/compose-last-28-days-collaborative-productivity/thumbnail.png?repo_id=41986369&image_size=auto" />|
