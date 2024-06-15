@@ -12,7 +12,7 @@
 
 # Segundo paso:
 
-<center>
+<center align="center">
 
 | Instalar Vue 3 | Colocar la Configuración en vite.config.js|
 | ----------- | ----------- |
@@ -21,7 +21,7 @@
 |<pre><code class="bash">npm install @vitejs/plugin-vue</code></pre>| <pre><code class="javascript">export default defineConfig({plugins: [vue(),]});</code></pre> |
 
 
-<h1>Estructura</h1>
+<h1 align="center">Estructura</h1>
 
 ```bash
 resources
