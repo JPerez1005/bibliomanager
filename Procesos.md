@@ -1,11 +1,3 @@
-<style>
-    .padre{
-        display:flex;
-        flex-direction:row;
-        gap: 4%;
-    }
-</style>
-
 # primeros pasos:
 
 ### crear proyecto con laravel=>
