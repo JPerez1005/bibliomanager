@@ -42,7 +42,13 @@ resources
 │           └── EjemploComponent.vue
 ```
 
-
+|Procesos de creacion por consola|
+|-|
+|<pre><code class="bash">cd resources</code></pre>|
+|<pre><code class="bash">touch css/vue.css</code></pre>|
+|<pre><code class="bash">mkdir js/vue</code></pre>|
+|<pre><code class="bash">touch js/vue/App.vue js/vue/main.js js/vue/routes.js</code></pre>|
+|<pre><code class="bash">mkdir js/vue/components</code></pre>|
 
 <h1 align="center">Tercer Paso:</h1>
 
