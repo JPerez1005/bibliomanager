@@ -1,6 +1,6 @@
 <h1 align="center">Primeros Pasos:</h1>
 
-<p align="center">
+<div align="left">
 
 |Crear Proyecto|
 |-|
@@ -9,7 +9,8 @@
 |<pre><code class="bash">laravel new nombre-del-proyecto</code></pre>|
 
 
-</p>
+</div>
+
 
 
 <h1 align="center">Segundo Paso:</h1>
@@ -70,43 +71,20 @@ y lo importamos en el main.js por lo general es de la siguiente manera
 import '../../css/vue.css';
 
 <h1 align="center">Cuarto Paso:</h1>
-## crear tablas y modelos
 
-```bash
-php artisan make:migration create<nombre>Table
-```
+|Crear Tablas|Tablas, modelos y controladores|
+|-|-|
+|<pre><code class="bash">php artisan make:migration create<nombre>Table</code></pre>| <pre><code class="javascript">php artisan make:migration create<nombre>Table -m -c</code></pre> |
 
-### para crear todo rapido se usaria el comando:
-
-```bash
-php artisan make:migration create<nombre>Table -m -c
-```
-
-## ejecutar migraciones
-
-```bash
-php artisan migrate
-```
-
-tambien las podemos eliminar y volver a crearlas
-
-```bash
-php artisan migrate:refresh
-```
-
-o solo poder eliminar la anterior
-
-```bash
-php artisan migrate:rollback
-```
+|Realizar Las Migraciones|Actualizar Todas las migraciones|eliminar migración anterior|
+|-|-|-|
+|<pre><code class="bash">php artisan migrate</code></pre>| <pre><code class="bash">php artisan migrate:refresh</code></pre> |<pre><code class="bash">php artisan migrate:rollback</code></pre> |
 
 <hr/>
 
 
 <h1 align="center">Quinto Paso:</h1>
-crear los request
 
-```bash
-php artisan make:request PutRequest
-php artisan make:request StoreRequest
-```
+|Put Request|Store Request|
+|-|-|
+|<pre><code class="bash">php artisan make:request PutRequest</code></pre>| <pre><code class="bash">php artisan make:request StoreRequest</code></pre> |
