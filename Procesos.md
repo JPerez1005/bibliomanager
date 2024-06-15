@@ -20,22 +20,12 @@
 
 # Segundo paso:
 
-<div class="padre">
-    <div>
-        instalar vue3:
-        <pre><code class="bash">
-    npm install vue
-    npm install vue-loader
-    npm install @vitejs/plugin-vue
-        </code></pre>
-    </div>
-    <div>
-        vite.config.js:
-        <pre><code class="javascript">
-    import vue from '@vitejs/plugin-vue';
-        </code></pre>
-    </div>
-</div>
+| Instalar Vue 3 | Colocar la Configuración en vite.config.js|
+| ----------- | ----------- |
+|<pre><code class="bash">npm install vue</code></pre>| <pre><code class="javascript">import vue from '@vitejs/plugin-vue';</code></pre> |
+|<pre><code class="bash">npm install vue-loader</code></pre>| |
+|<pre><code class="bash">npm install @vitejs/plugin-vue</code></pre>| |
+
 ### agregamos vue(), dentro de plugins en ese mismo archivo=>
 ```javascript
     export default defineConfig({
@@ -134,3 +124,7 @@ crear los request
 php artisan make:request PutRequest
 php artisan make:request StoreRequest
 ```
+
+| Repository Activity Trends | Collaborative Productivity - Last 28 days |
+| ----------- | ----------- |
+|<img src="https://next.ossinsight.io/widgets/official/compose-activity-trends/thumbnail.png?repo_id=41986369&image_size=auto" />|<img src="https://next.ossinsight.io/widgets/official/compose-last-28-days-collaborative-productivity/thumbnail.png?repo_id=41986369&image_size=auto" />|
