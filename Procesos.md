@@ -20,20 +20,16 @@
 
 # Segundo paso:
 
+<center>
+
 | Instalar Vue 3 | Colocar la Configuración en vite.config.js|
 | ----------- | ----------- |
 |<pre><code class="bash">npm install vue</code></pre>| <pre><code class="javascript">import vue from '@vitejs/plugin-vue';</code></pre> |
-|<pre><code class="bash">npm install vue-loader</code></pre>| |
-|<pre><code class="bash">npm install @vitejs/plugin-vue</code></pre>| |
+|<pre><code class="bash">npm install vue-loader</code></pre>| <h5>Agregamos Vue.js dentro de vite.config.js</h5> |
+|<pre><code class="bash">npm install @vitejs/plugin-vue</code></pre>| <pre><code class="javascript">export default defineConfig({plugins: [vue(),]});</code></pre> |
 
-### agregamos vue(), dentro de plugins en ese mismo archivo=>
-```javascript
-    export default defineConfig({
-    plugins: [
-        vue(),
-    ]
-    });
-```
+
+<h1>Estructura</h1>
 
 ```bash
 resources
@@ -52,6 +48,11 @@ resources
 │       └── components
 │           └── EjemploComponent.vue
 ```
+
+</center>
+
+
+
 
 # Tercer paso:
 ### instalar taildwind=>
