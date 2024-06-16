@@ -21,6 +21,10 @@
 |<pre><code class="bash">npm install vue-loader</code></pre>| <h5>Agregamos Vue.js dentro de vite.config.js</h5> |
 |<pre><code class="bash">npm install @vitejs/plugin-vue</code></pre>| <pre><code class="javascript">export default defineConfig({plugins: [vue(),]});</code></pre> |
 
+|instalar vue-router|
+|-|
+|<pre><code class="bash">npm install vue-router@4</code></pre>|
+
 
 <h1 align="center">Estructura</h1>
 
@@ -47,7 +51,7 @@ resources
 |<pre><code class="bash">cd resources</code></pre>|
 |<pre><code class="bash">touch css/vue.css</code></pre>|
 |<pre><code class="bash">mkdir js/vue</code></pre>|
-|<pre><code class="bash">touch js/vue/App.vue js/vue/main.js js/vue/routes.js</code></pre>|
+|<pre><code class="bash">touch js/vue/App.vue js/vue/main.js js/vue/router.js</code></pre>|
 |<pre><code class="bash">mkdir js/vue/components</code></pre>|
 
 <h1 align="center">Tercer Paso:</h1>
