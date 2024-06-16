@@ -1,10 +1,16 @@
 <template>
     <!-- <router-view></router-view> -->
-    hola que mas
+    <tablas/>
 </template>
 <script>
+import Tablas from '../vue/components/TableComponent.vue';
+
 export default {
-    name:'App'
+    name:'App',
+    components:{
+        Tablas,
+    }
+
 }
 </script>
 <style>

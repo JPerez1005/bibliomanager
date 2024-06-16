@@ -58,7 +58,7 @@ resources
 
 |Intalar Taildwind| Exponer Taildwind |
 |-|-|
-|<pre><code class="bash">npm install -D tailwindcss</code></pre>| <pre><code class="javascript">npx tailwindcss init</code></pre> |
+|<pre><code class="bash">npm install -D tailwindcss postcss autoprefixer</code></pre>| <pre><code class="bash">npx tailwindcss init -p</code></pre> |
 
 en el archivo tailwind.config.js agregamos en el array de content:
 
