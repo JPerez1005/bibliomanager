@@ -134,6 +134,9 @@
                 </tbody>
             </table>
         </section>
+        <section class="table__header">
+            Paginacion
+        </section>
     </main>
 </template>
 <script setup>
@@ -358,23 +361,23 @@
 </script>
 <style>
 
-* {
-    margin: 0;
-    padding: 0;
+    * {
+        margin: 0;
+        padding: 0;
 
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-@media print {
- .table, .table__body {
-  overflow: visible;
-  height: auto !important;
-  width: auto !important;
- }
-}
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    @media print {
+    .table, .table__body {
+    overflow: visible;
+    height: auto !important;
+    width: auto !important;
+    }
+    }
 
-/*@page {
-    size: landscape;
-    margin: 0; 
-}*/
+    /*@page {
+        size: landscape;
+        margin: 0; 
+    }*/
 </style>
