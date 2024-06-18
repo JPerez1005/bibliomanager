@@ -3,7 +3,7 @@
   alt="header"/>
 </div>
 
-<img align='right' src='https://media.giphy.com/media/bcKmIWkUMCjVm/giphy.gif' width='200"'>
+<img align='left' src='https://media.giphy.com/media/bcKmIWkUMCjVm/giphy.gif' width='200"'>
 
 
 # Estructura de la api rest en laravel
@@ -42,6 +42,7 @@
     // Es util para fechas de cambios en la db
     $table->timestamps();
 ```
+
 </details>
 
 <details align="center">
