@@ -182,7 +182,8 @@ app.mount("#app");
     {
         public function authorize(): bool
         {
-            return false;
+            //recordar cambiar el valor de false a true
+            return true;
         }
 
         public function rules(): array

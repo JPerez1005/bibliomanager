@@ -17,7 +17,7 @@ class LibroController extends Controller
     public function index()
     {
         // Para las paginaciones
-        return response()->json(Libro::paginate(10));
+        return response()->json(Libro::with('autor')->paginate(10));
     }
 
     public function store(StoreRequest $request)

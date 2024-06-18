@@ -6,22 +6,17 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
-        Schema::create('rol', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::table('usuario', function (Blueprint $table) {
+            $table->enum('rol',['admin','regular'])->default('regular');
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
-        Schema::dropIfExists('rol');
+        Schema::table('usuario', function (Blueprint $table) {
+            $table->dropColumn('rol');
+        });
     }
 };

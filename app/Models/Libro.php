@@ -18,4 +18,8 @@ class Libro extends Model
     public function autor(){
         return $this->belongsTo(Autor::class,'autor_id');
     }
+
+    function prestamos(){
+        return $this->hasMany(Prestamo::class);
+    }
 }
