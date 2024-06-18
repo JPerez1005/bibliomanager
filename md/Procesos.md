@@ -3,7 +3,7 @@
   alt="header"/>
 </div>
 
-<details align="center">
+<details align="left">
 <summary> <b> <samp> Primeros pasos </samp></b></summary>
 
 <h1 align="center">Primeros Pasos:</h1>
@@ -21,7 +21,7 @@
 
 </details>
 
-<details align="center">
+<details align="left">
 <summary> <b> <samp> Segundo paso </samp></b></summary>
 
 
@@ -68,7 +68,7 @@ resources
 
 </details>
 
-<details align="center">
+<details align="left">
 <summary> <b> <samp> Tercer Paso </samp></b></summary>
 
 <h1 align="center">Tercer Paso:</h1>
