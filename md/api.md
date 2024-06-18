@@ -3,10 +3,14 @@
   alt="header"/>
 </div>
 
+<div align="center" width="100">
+
 <img align='left' src='https://media.giphy.com/media/bcKmIWkUMCjVm/giphy.gif' width='200"'>
 
-
 # Estructura de la api rest en laravel
+
+</div>
+
 
 <details align="center">
 <summary> <b> <samp> Migración </samp></b></summary>
