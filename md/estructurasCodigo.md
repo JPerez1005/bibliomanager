@@ -3,6 +3,11 @@
   alt="header"/>
 </div>
 
+<img align='right' src='https://media.giphy.com/media/bcKmIWkUMCjVm/giphy.gif' width='200"'>
+
+<details align="left">
+<summary> <b> <samp> Configuracion de Rute Web.php </samp></b></summary>
+
 en la carpeta routes de web colocar lo siguiente
 
 ```javascript
@@ -11,25 +16,30 @@ Route::get('/vue', function () {
 });
 ```
 
+</details>
+
+<details align="left">
+<summary> <b> <samp> creacion de vue.blade.php </samp></b></summary>
+
 ahora creamos ese archivo en vue con el nombre de vue.blade.php
 
+```bash
+    touch resources/views/vue.blade.php
+```
+
+Y colocamos lo siguiente dentro de ese archivo dentro de body:
+
 ```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titulo</title>
-    </head>
     <body>
         <div id="app"></div>
         
         
         @vite(['resources/js/vue/main.js'])
-</body>
-</html>
+    </body>
 ```
-
+</details>
+<details align="left">
+<summary> <b> <samp> configuración de router.js </samp></b></summary>
 colocar lo siguiente en router.js
 
 ```javascript
@@ -51,7 +61,9 @@ const router=createRouter({
 export default router;
 
 ```
-
+</details>
+<details align="left">
+<summary> <b> <samp> configuración de main.js </samp></b></summary>
 así debe de ser main.js
 
 ```javascript
@@ -70,6 +82,8 @@ window.axios=axios;
 
 app.mount("#app");
 ```
+
+</details>
 
 <div align="center" width="100">
   <img src="https://capsule-render.vercel.app/api?color=0:1408d0,50:0860d0,100:08c4d0&height=100&section=footer&fontSize=30&type=waving&fontColor=fefefe"
