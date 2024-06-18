@@ -3,12 +3,12 @@
   alt="header"/>
 </div>
 
-<img align='left' src='https://media.giphy.com/media/bcKmIWkUMCjVm/giphy.gif' width='200"'>
+<img align='right' src='https://media.giphy.com/media/bcKmIWkUMCjVm/giphy.gif' width='200"'>
 
 
 # Estructura de la api rest en laravel
 
-<details align="center">
+<details align="left">
 <summary> <b> <samp> Migración </samp></b></summary>
 
 ## migracion
@@ -45,7 +45,7 @@
 
 </details>
 
-<details align="center">
+<details align="left">
 <summary> <b> <samp> Modelo </samp></b></summary>
 
 ## modelo
@@ -92,7 +92,7 @@
 ```
 </details>
 
-<details align="center">
+<details align="left">
 <summary> <b> <samp> Validación de datos </samp></b></summary>
 
 ## validación de datos
@@ -136,7 +136,7 @@
 
 </details>
 
-<details align="center">
+<details align="left">
 <summary> <b> <samp> Controlador </samp></b></summary>
 
 ## controlador

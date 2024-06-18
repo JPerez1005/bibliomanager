@@ -3,7 +3,7 @@
   alt="header"/>
 </div>
 
-<details align="left">
+<details align="center">
 <summary> <b> <samp> Primeros pasos </samp></b></summary>
 
 <h1 align="center">Primeros Pasos:</h1>
