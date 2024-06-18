@@ -1,3 +1,11 @@
+<div align="center" width="100">
+  <img src="https://capsule-render.vercel.app/api?color=0:1408d0,50:0860d0,100:08c4d0&height=250&section=header&text=Julian%20Perez%20(FullStack)&fontSize=30&type=waving&fontColor=fefefe&&animation=fadeIn"
+  alt="header"/>
+</div>
+
+<details align="center">
+<summary> <b> <samp> Primeros pasos </samp></b></summary>
+
 <h1 align="center">Primeros Pasos:</h1>
 
 <div align="left">
@@ -11,6 +19,10 @@
 
 </div>
 
+</details>
+
+<details align="center">
+<summary> <b> <samp> Segundo paso </samp></b></summary>
 
 
 <h1 align="center">Segundo Paso:</h1>
@@ -54,9 +66,14 @@ resources
 |<pre><code class="bash">touch js/vue/App.vue js/vue/main.js js/vue/router.js</code></pre>|
 |<pre><code class="bash">mkdir js/vue/components</code></pre>|
 
+</details>
+
+<details align="center">
+<summary> <b> <samp> Tercer Paso </samp></b></summary>
+
 <h1 align="center">Tercer Paso:</h1>
 
-|Intalar Taildwind| Exponer Taildwind |
+|Instalar Taildwind| Exponer Taildwind |
 |-|-|
 |<pre><code class="bash">npm install -D tailwindcss postcss autoprefixer</code></pre>| <pre><code class="bash">npx tailwindcss init -p</code></pre> |
 
@@ -80,22 +97,9 @@ creamos un archivo css de vue con lo siguiente
 y lo importamos en el main.js por lo general es de la siguiente manera
 import '../../css/vue.css';
 
-<h1 align="center">Cuarto Paso:</h1>
+</details>
 
-|Crear Tablas|Tablas, modelos y controladores|
-|-|-|
-|<pre><code class="bash">php artisan make:migration create<nombre>Table</code></pre>| <pre><code class="javascript">php artisan make:migration create<nombre>Table</code></pre> |
-|<pre><code class="bash">php artisan make:controller <nombre>Controller -m <nombre> </code></pre>|El orden es migracion, controlador y modelo, ver estructura en el otro md|
-
-|Realizar Las Migraciones|Actualizar Todas las migraciones|eliminar migración anterior|
-|-|-|-|
-|<pre><code class="bash">php artisan migrate</code></pre>| <pre><code class="bash">php artisan migrate:refresh</code></pre> |<pre><code class="bash">php artisan migrate:rollback</code></pre> |
-
-<hr/>
-
-
-<h1 align="center">Quinto Paso:</h1>
-
-|Put Request|Store Request|
-|-|-|
-|<pre><code class="bash">php artisan make:request PutRequest</code></pre>| <pre><code class="bash">php artisan make:request StoreRequest</code></pre> |
+<div align="center" width="100">
+  <img src="https://capsule-render.vercel.app/api?color=0:1408d0,50:0860d0,100:08c4d0&height=100&section=footer&fontSize=30&type=waving&fontColor=fefefe"
+  alt="footer" />
+</div>
