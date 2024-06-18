@@ -13,6 +13,8 @@ class Libro extends Model
 
     protected $fillable=['titulo','stock','autor_id'];
 
+    protected $table = 'libro';
+
     public function autor(){
         return $this->belongsTo(Autor::class,'autor_id');
     }

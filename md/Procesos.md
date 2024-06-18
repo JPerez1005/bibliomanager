@@ -85,7 +85,7 @@ import '../../css/vue.css';
 |Crear Tablas|Tablas, modelos y controladores|
 |-|-|
 |<pre><code class="bash">php artisan make:migration create<nombre>Table</code></pre>| <pre><code class="javascript">php artisan make:migration create<nombre>Table</code></pre> |
-|<pre><code class="bash">php artisan make:controller -m <nombre>Controller</code></pre>|El orden es migracion, controlador y modelo, ver estructura en el otro md|
+|<pre><code class="bash">php artisan make:controller <nombre>Controller -m <nombre> </code></pre>|El orden es migracion, controlador y modelo, ver estructura en el otro md|
 
 |Realizar Las Migraciones|Actualizar Todas las migraciones|eliminar migración anterior|
 |-|-|-|

@@ -166,7 +166,7 @@ app.mount("#app");
 <p align="center">los request son necesarios para la validación de los datos</p>
 
 |StoreRequest|PutRequest|
-|-|
+|-|-|
 |<pre><code class="bash">php artisan make:request StoreRequest</code></pre>|<pre><code class="bash">php artisan make:request StoreRequest</code></pre>|
 
 <h5 align="center">Este sería un ejemplo de codigo para los request</h5>
