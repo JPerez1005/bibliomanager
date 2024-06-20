@@ -1,0 +1,265 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body{
+    @apply min-h-screen flex justify-center items-center;
+    /* background: url(images/html_table.jpg) center / cover; */
+}
+
+main.table{
+    @apply rounded-lg overflow-hidden;
+    width: 50vw;
+    height: 70vh;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.table__header
+{
+    @apply w-full flex justify-between items-center;
+    height: 10%;
+    background-color: #fff4;
+    padding: .8rem 1rem;
+}
+
+.table__header .input-group
+{
+    @apply h-full rounded-lg flex justify-center items-center;
+    width: 35%;
+    background-color: #fff5;
+    padding: 0 .8rem;
+    transition: .2s;
+}
+
+.table__header .input-group:hover {
+    width: 45%;
+    background-color: #fff8;
+    box-shadow: 0 .1rem .4rem #0002;
+}
+
+.table__header .input-group img
+{
+    @apply w-5 h-5;
+}
+
+.table__header .input-group input
+{
+    @apply w-full bg-transparent;
+    padding: 0 .5rem 0 .3rem;
+    border: none;
+    outline: none;
+}
+
+.table__body
+{
+    @apply rounded-lg;
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+    /* margin: .8rem auto; */
+    overflow: overlay;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+.table__body::-webkit-scrollbar
+{
+    @apply w-2 h-2;
+}
+
+.table__body::-webkit-scrollbar-thumb
+{
+    @apply rounded-lg invisible;
+    background-color: #0004;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb
+{
+    @apply visible;
+}
+
+table
+{
+    @apply w-full;
+}
+
+td img
+{
+    @apply w-8 h-8 mr-2 align-middle;
+    border-radius: 50%;
+}
+
+table, th, td {
+    @apply p-4 text-left;
+    border-collapse: collapse;
+}
+
+thead th
+{
+    @apply sticky top-0 left-0 cursor-pointer capitalize;
+    background-color: #d5d1defe;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+tbody tr.hide
+{
+    @apply opacity-0;
+    transform: translateX(100%);
+}
+
+tbody tr:hover {
+    background-color: #fff6 !important;
+}
+
+tbody tr td,
+tbody tr td p,
+tbody tr td img {
+    transition: .2s ease-in-out;
+}
+
+tbody tr.hide td,
+tbody tr.hide td p {
+    @apply p-0;
+    font: 0 / 0 sans-serif;
+    transition: .2s ease-in-out .5s;
+}
+
+tbody tr.hide td img{
+    @apply w-0 h-0;
+    transition: .2s ease-in-out .5s;
+}
+
+.status {
+    @apply rounded-lg text-center;
+    padding: .4rem 0;
+}
+
+.status.delivered {
+    @apply bg-green-300 text-green-900;
+}
+
+.status.cancelled {
+    @apply bg-pink-400 text-red-800;
+}
+
+.status.pending {
+    @apply bg-orange-300;
+}
+
+.status.shipped {
+    @apply bg-blue-400;
+}
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+
+thead th span.icon-arrow
+{
+    @apply inline-block w-5 h-5 text-center text-base ml-2;
+    border-radius: 50%;
+    border: 1.4px solid transparent;
+    transition: .2s ease-in-out;
+}
+
+thead th:hover span.icon-arrow{
+    border: 1.4px solid #6c00bd;
+}
+
+thead th:hover {
+    @apply text-purple-700;
+}
+
+thead th.active span.icon-arrow
+{
+    @apply bg-purple-700 text-white;
+}
+
+thead th.asc span.icon-arrow{
+    transform: rotate(180deg);
+}
+
+thead th.active,tbody td.active {
+    @apply text-purple-700;
+}
+
+.export__file
+{
+    @apply relative;
+}
+
+.export__file .export__file-btn
+{
+    @apply inline-block w-8 h-8;
+    background: #fff6 url(images/export.png) center / 80% no-repeat;
+    border-radius: 50%;
+    transition: .2s ease-in-out;
+}
+
+.export__file .export__file-btn:hover { 
+    @apply bg-white cursor-pointer;
+    transform: scale(1.15);
+}
+
+.export__file input
+{
+    @apply hidden;
+}
+
+.export__file .export__file-options
+{
+    @apply absolute right-0 w-48 rounded-lg overflow-hidden text-center opacity-0;
+    transform: scale(.8);
+    transform-origin: top right;
+    box-shadow: 0 .2rem .5rem #0004;
+    transition: .2s;
+}
+
+.export__file input:checked + .export__file-options{
+    @apply opacity-100;
+    transform: scale(1);
+    z-index: 100;
+}
+
+.export__file .export__file-options label
+{
+    @apply flex w-full bg-gray-200 justify-around items-center;
+    padding: .6rem 0;
+    transition: .2s ease-in-out;
+}
+
+.export__file .export__file-options label:first-of-type
+{
+    @apply bg-green-300;
+    padding: 1rem 0;
+}
+
+.export__file .export__file-options label:hover
+{
+    @apply bg-white cursor-pointer;
+    transform: scale(1.05);
+}
+
+.export__file .export__file-options img
+{
+    @apply w-8 h-auto;
+}

@@ -22,4 +22,13 @@ class Libro extends Model
     function prestamos(){
         return $this->hasMany(Prestamo::class);
     }
+
+    public static function validationRules()
+    {
+        return [
+            'titulo'=>'required|min:5|max:500',
+            'stock'=>'required|integer',
+            'autor_id'=>'required|integer',
+        ];
+    }
 }

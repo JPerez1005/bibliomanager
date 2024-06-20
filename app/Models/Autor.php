@@ -18,4 +18,11 @@ class Autor extends Model
     function libros(){
         return $this->hasMany(Libro::class);
     }
+
+    public static function validationRules()
+    {
+        return [
+            'nombre'=>'required|min:5|max:500',
+        ];
+    }
 }

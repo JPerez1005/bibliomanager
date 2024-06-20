@@ -1,4 +1,5 @@
 <template>
+    
     <main class="table" id="customers_table">
         <section class="table__header">
             <h1>Customer's Orders</h1>
@@ -369,11 +370,11 @@
         font-family: sans-serif;
     }
     @media print {
-    .table, .table__body {
-    overflow: visible;
-    height: auto !important;
-    width: auto !important;
-    }
+        .table, .table__body {
+        overflow: visible;
+        height: auto !important;
+        width: auto !important;
+        }
     }
 
     /*@page {

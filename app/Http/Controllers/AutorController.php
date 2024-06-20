@@ -21,7 +21,14 @@ class AutorController extends Controller
 
     public function store(StoreRequest $request)
     {
-        return response()->json(Autor::create($request->validated()));
+        try {
+            $validatedData = $request->validated();
+            $autor = Autor::create($validatedData);
+            return response()->json(['message' => 'Autor creado con éxito', 'data' => $autor], 201);
+        } catch (\Exception $e) {
+            log('Error al crear el autor: ' . $e->getMessage());
+            return response()->json(['message' => 'Error al crear el autor'], 500);
+        }
     }
 
     public function show(Autor $Autor)

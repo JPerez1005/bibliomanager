@@ -1,14 +1,12 @@
 <template>
-    <!-- <router-view></router-view> -->
-    <tablas/>
+    <router-link :to="{name:'presentacion'}" class="inicio">Inicio</router-link>
+    <router-view></router-view>
 </template>
 <script>
-import Tablas from '../vue/components/TableComponent.vue';
 
 export default {
     name:'App',
     components:{
-        Tablas,
     }
 
 }
