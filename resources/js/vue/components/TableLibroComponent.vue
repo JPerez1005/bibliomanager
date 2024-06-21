@@ -37,7 +37,7 @@
     </section>
   </template>
   
-  <script>
+<script>
   import { useLibroStore } from '../store/LibroStore.js';
   import { onMounted, computed } from 'vue';
   
@@ -58,5 +58,5 @@
       };
     },
   };
-  </script>
+</script>
   
